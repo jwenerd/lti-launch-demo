@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "target": "es6",
+      "baseUrl": ".",
+      "paths": {
+        "*": ["src/*"],
+        "@/*": ["src/*"],
+        "@tests/*": ["tests/*"]
+      },
+      "outDir": "./build",
+      "removeComments": true,
+      "experimentalDecorators": true,      
+      "emitDecoratorMetadata": true,
+      "moduleResolution": "node",
+      "importHelpers": true,
+      "allowJs": true,
+      "strictNullChecks": true,
+      "types": [
+        "node",
+      ],
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "lib": [
+        "es2015",
+        "dom"
+      ]
+    },
+    "include": [
+      "./src/**/*",
+      "./tests/**/*",
+    ],
+    "exclude": [
+      "./src/public/"
+    ]
+  }
