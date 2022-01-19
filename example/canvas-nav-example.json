@@ -1,0 +1,38 @@
+{
+  "title": "LTI Launch Demo",
+  "scopes": [],
+  "extensions": [
+    {
+      "domain": "localhost",
+      "tool_id": "example-course-nav",
+      "platform": "canvas.instructure.com",
+      "settings": {
+        "text": "LTI Launch Demo",
+        "placements": [
+          {
+            "text": "LTI Launch Demo",
+            "enabled": true,
+            "visibility": "admins",
+            "placement": "course_navigation",
+            "message_type": "LtiResourceLinkRequest",
+            "target_link_uri": "https://localhost:3000/lti",
+            "custom_fields": {
+              "course_id": "$Canvas.course.id"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "public_jwk": {
+    "kty": "RSA",
+    "e": "AQAB",
+    "use": "sig",
+    "kid": "wDGcLC-EM9zxFa5QTHMOAdZD5MGb3Yho8xQ6lBsD-IE",
+    "alg": "RS256",
+    "n": "1Vkgwtfz4kR18ZC7UgkWPYj0XQkXWxCDCjVB_fnYC2HDtgTd5EeU99hqT-lBbDumOUj-L6vINgwL9BBruJXjea6R-O43rK0ANeJVlAUJ34KYTvkDOY0Hy-UXiCSRq8DbYuwX9_2ZxiSaHKImWfVycXFtVYDC4sBZJzgKo6oRBIwPlGhPyJERc47-9_r-ngtTVq30aFJMWlL-cMby5PJIUJHLWdbvTVVqiOd_-klOu5dpf5yAvSz71m_V75eo-NbQF5zFeZn8eklM88hRPXvOYQd89RNiREWe928T5hIjEdOIdmhQq3zrXrj9l0NANoNlF9M2iy-hhON0A3SETMZ9qw"
+  },
+  "description": "LTI Launch Demo",
+  "target_link_uri": "https://localhost:3000/lti",
+  "oidc_initiation_url": "https://localhost:3000/lti/oidc"
+}

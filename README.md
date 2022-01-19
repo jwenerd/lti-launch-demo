@@ -20,9 +20,11 @@ npm install
 npm run dev
 ```
 
-_note: This code makes use of a self-signed https certificate so can utilize iframe in LMS display when on local development.  You may need to tell your OS to trust this self-signed certificate to work.  See lines 10-17 of server.ts file_
+_note: This code makes use of a self-signed https certificate so can utilize iframe in LMS display when on local development.  You may need to tell your OS to trust this self-signed certificate to work.  See [lines 10-17 of server.ts](src/server.ts#L10-17) file_
 
 
 ## LMS Configuration
 oidc_initiation_url: `https://localhost:3000/lti/oidc`   
 target_link_uri: `https://localhost:3000/lti`   
+
+An example JSON configuration for course navigation in Canvas is included at [example/canvas-nav-example.json](example/canvas-nav-example.json)
